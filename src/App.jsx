@@ -6,6 +6,7 @@ import { Country } from "./Pages/Country";
 import { Contact } from "./Pages/Contact";
 import { AppLayout } from "./Components/Layout/AppLayout";
 import { ErrorPage } from "./Pages/ErrorPage";
+import { CountryDetails } from "./Components/Layout/CountryDetails";
 
 
 
@@ -31,6 +32,10 @@ const App = () => {
           path: "country",
           element:<Country />
           
+        },
+        {
+          path :"/country/:id",
+          element: <CountryDetails />
         },
         {
           path: "contact",
