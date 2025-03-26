@@ -43,7 +43,7 @@ export const Country = () => {
     if(isPending) return <h1><Loader /></h1>
 
     return <section className="country-section">
-        <SearchFilter search={search} setSearch={setSearch} filter={filter} setFilter={setFilter} />
+        <SearchFilter search={search} setSearch={setSearch} filter={filter} setFilter={setFilter} countries={countries} setCountries={setCountries} />
         <ul className="grid grid-four-cols">
             {
                 filterCountries.map((currCountry,index) => {

@@ -10,6 +10,7 @@ export const CountryDetails = ()  => {
     const [isPending,startTransiton] = useTransition();
     const [country,setCountry] = useState();
 
+
     useEffect(() => {
         startTransiton(async() => {
             const res = await getCountryIndData(params.id);
